@@ -233,6 +233,18 @@ Booking Successful
 
 ---
 
+## Git Repository url
+
+https://github.com/punyashasarangi/travel-booking-dashboard
+
+---
+
+## Live site
+
+https://punyashasarangi.github.io/travel-booking-dashboard/
+
+---
+
 ## Source Code
 
 The complete source code of this project is available in this GitHub repository.
