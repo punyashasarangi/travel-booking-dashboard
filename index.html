@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Travel Booking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">TravelGo</h2>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Bookings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+            <h1>Explore The World With Ease</h1>
+
+            <p>
+                Discover breathtaking destinations and create unforgettable travel experiences.
+            </p>
+
+            <div class="search-box">
+
+               <input type="text"
+                id="searchInput"
+                placeholder="Search your dream destination">
+
+                <button>Search</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DASHBOARD CARDS ================= -->
+
+    <section class="stats">
+
+        <div class="card">
+            <h2>150+</h2>
+            <p>Total Trips</p>
+        </div>
+
+        <div class="card">
+            <h2>40</h2>
+            <p>Upcoming Trips</p>
+        </div>
+
+        <div class="card">
+            <h2>110</h2>
+            <p>Completed Trips</p>
+        </div>
+
+        <div class="card">
+            <h2>75</h2>
+            <p>Saved Places</p>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="destinations" id="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-grid" id="destinationGrid">
+
+
+            <!-- Bali -->
+
+            <div class="destination-card">
+                <img src="images/bali.jpg" alt="Bali">
+                <h3 class="destination-name">Bali</h3>
+                <p>Starting from ₹25,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Dubai -->
+
+            <div class="destination-card">
+                <img src="images/dubai.jpeg" alt="Dubai">
+                <h3 class="destination-name">Dubai</h3>
+                <p>Starting from ₹40,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Goa -->
+
+            <div class="destination-card">
+                <img src="images/goa.jpeg" alt="Goa">
+               <h3 class="destination-name">Goa</h3>
+                <p>Starting from ₹12,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Hong Kong -->
+
+            <div class="destination-card">
+                <img src="images/hongkong.jpeg" alt="Hong Kong">
+                <h3 class="destination-name">Hong Kong</h3>
+                <p>Starting from ₹48,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Japan -->
+
+            <div class="destination-card">
+                <img src="images/japan.jpeg" alt="Japan">
+                <h3 class="destination-name">Japan</h3>
+                <p>Starting from ₹65,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Malaysia -->
+
+            <div class="destination-card">
+                <img src="images/malaysia.jpeg" alt="Malaysia">
+                <h3 class="destination-name">Malaysia</h3>
+                <p>Starting from ₹35,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Maldives -->
+
+            <div class="destination-card">
+                <img src="images/maldives.jpeg" alt="Maldives">
+                <h3 class="destination-name">Maldives</h3>
+                <p>Starting from ₹70,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Paris -->
+
+            <div class="destination-card">
+                <img src="images/paris.jpeg" alt="Paris">
+                <h3 class="destination-name">Paris</h3>
+                <p>Starting from ₹55,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Singapore -->
+
+            <div class="destination-card">
+                <img src="images/singapore.jpeg" alt="Singapore">
+                <h3 class="destination-name">Singapore</h3>
+                <p>Starting from ₹38,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Switzerland -->
+
+            <div class="destination-card">
+                <img src="images/switzerland.jpeg" alt="Switzerland">
+                <h3 class="destination-name">Switzerland</h3>
+                <p>Starting from ₹85,000</p>
+                <button>Book Now</button>
+            </div>
+
+
+            <!-- Vietnam -->
+
+            <div class="destination-card">
+                <img src="images/vietnam.jpeg" alt="Vietnam">
+                <h3 class="destination-name">Vietnam</h3>
+                <p>Starting from ₹30,000</p>
+                <button>Book Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BOOKING FORM ================= -->
+
+    <section class="booking" id="booking">
+
+        <h2>Book Your Dream Trip</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="text" placeholder="Destination" required>
+
+            <input type="date" required>
+
+            <input type="date" required>
+
+            <input type="number" placeholder="Number of Travellers" required>
+
+            <select required>
+                <option>Economy Class</option>
+                <option>Business Class</option>
+                <option>First Class</option>
+            </select>
+
+            <button type="submit">
+                Book Trip
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ================= UPCOMING TRIPS ================= -->
+
+    <section class="trips">
+
+        <h2>Upcoming Trips</h2>
+
+        <div class="trip-card">
+            <h3>Dubai</h3>
+            <p><strong>Date:</strong> 25 August 2026</p>
+            <p><strong>Status:</strong> Confirmed</p>
+            <p><strong>Payment:</strong> Paid</p>
+        </div>
+
+
+        <div class="trip-card">
+            <h3>Bali</h3>
+            <p><strong>Date:</strong> 12 September 2026</p>
+            <p><strong>Status:</strong> Pending</p>
+            <p><strong>Payment:</strong> Processing</p>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="reviews">
+
+        <h2>What Travelers Say</h2>
+
+        <div class="review-container">
+
+            <div class="review-card">
+                <p>
+                    Amazing travel experience. The booking process was seamless and quick.
+                </p>
+                <h4>- Priya Sharma</h4>
+            </div>
+
+
+            <div class="review-card">
+                <p>
+                    Loved the destinations and excellent customer support.
+                </p>
+                <h4>- Rahul Verma</h4>
+            </div>
+
+
+            <div class="review-card">
+                <p>
+                    Highly recommended for planning international trips.
+                </p>
+                <h4>- Ananya Das</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe For Travel Updates</h2>
+
+        <input type="email" placeholder="Enter your Email Address">
+
+        <button>Subscribe</button>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <p>
+            © 2026 TravelGo. All Rights Reserved.
+        </p>
+
+        <div class="social-icons">
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

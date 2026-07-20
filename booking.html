@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - TravelGo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="booking-page">
+
+        <div class="booking-card">
+
+            <h1>Book Your Trip</h1>
+
+            <!-- Destination Name -->
+            <input type="text"
+                id="selectedDestination"
+                readonly>
+
+            <!-- Full Name -->
+            <input type="text"
+                placeholder="Full Name"
+                required>
+
+            <!-- Email -->
+            <input type="email"
+                placeholder="Email Address"
+                required>
+
+            <!-- Phone Number -->
+            <input type="tel"
+                placeholder="Phone Number"
+                required>
+
+            <!-- Number of Travellers -->
+            <input type="number"
+                placeholder="Number of Travellers"
+                required>
+
+            <!-- Check In -->
+            <input type="date"
+                required>
+
+            <!-- Check Out -->
+            <input type="date"
+                required>
+
+            <!-- Travel Class -->
+            <select required>
+
+                <option>Economy Class</option>
+                <option>Business Class</option>
+                <option>First Class</option>
+
+            </select>
+
+
+            <!-- Payment Method -->
+
+            <select required>
+
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>Net Banking</option>
+
+            </select>
+
+
+            <!-- Confirm Booking -->
+
+            <button id="confirmBooking">
+    Confirm Booking
+</button>
+
+<p id="bookingMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
